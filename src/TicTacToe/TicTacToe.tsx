@@ -89,7 +89,7 @@ const TicTacToe = () => {
         return (
             <>
                 <td className={cellClassName} onClick={() => handleClick(num)}>
-                    {cellValue}
+                    <span className='symbol'>{cellValue}</span>
                 </td>
             </>
         );
@@ -98,8 +98,8 @@ const TicTacToe = () => {
     return (
         <>
             <h1>Tic Tac Toe</h1>
-            <div className={`${winner || isDraw ? 'show' : ''}`}>
-                {winner ? `winner is ${winner}` : isDraw ? "It's a draw" : ''}
+            <div className={`winner ${winner || isDraw ? 'show' : ''}`}>
+                {winner ? `Winner is ${winner}!` : isDraw ? "It's a draw!" : ''}
             </div>
             <table>
                 <tbody>
