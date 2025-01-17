@@ -1,0 +1,41 @@
+.cell {
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    border: 1px solid gray;
+}
+
+.cell-X {
+    background-color: green;
+}
+
+.cell-O {
+    background-color: blue;
+}
+
+.reset-btn {
+    padding: 7px 20px;
+    margin-top: 10px;
+    background-color: black;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.reset-btn:hover {
+    cursor: pointer;
+}
+
+.reset-btn:active {
+    transform: scale(0.9);
+}
+
+.winner {
+    font-size: 24px;
+    margin: 25px 0;
+}
+
+.show {
+    display: block;
+}
